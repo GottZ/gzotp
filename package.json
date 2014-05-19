@@ -1,0 +1,18 @@
+{
+	"author": "Jan-Stefan Janetzky <pkggzotp@gottz.de> (http://GottZ.de)",
+	"name": "gzotp",
+	"description": "NodeJS One Time Password wrapper for notp, qr and thirty-two",
+	"version": "0.0.1",
+	"homepage": "https://github.com/GottZ/gzotp",
+	"repository": "git://github.com/GottZ/gzotp",
+	"main": "app.js",
+	"dependencies": {
+		"notp": "2.0.x",
+		"qr": "0.2.x",
+		"thirty-two": "0.0.x"
+	},
+	"engines": {
+		"node": ">=0.9"
+	},
+	"keywords": ["notp", "qr", "otp", "otpauth", "auth", "authenticator", "google"]
+}
