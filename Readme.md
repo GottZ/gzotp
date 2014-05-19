@@ -7,20 +7,20 @@
 	- qr
 	- thirty-two
 
-### how i do versioning:
-`x.y.z`
-
-- `x` means: it will break
-- `y` means: it will not break but will contain more features
-- `z` means: improvements, bug fixes, stuff like that.
-
-in general this means you can set `x` as dependency through your package.json
-
 ### goals:
 
 - clean generation of base64 encoded qr png's
 - foolproof key generation
-- usability
+- increased usability
+
+### how i do versioning:
+`x.y.z`
+
+- `x` means: it will break
+- `y` means: it will not break but it will contain more features
+- `z` means: it will just contain bug fixes / changes that won't effect your stuff
+
+overall this means.. you can just add package.json dependency's to x and everything should be fine.
 
 ### how to use:
 
@@ -49,5 +49,6 @@ usage:
 https://github.com/guyht/notp
 
 
-### todo:
-- more notp abstraction for increased usability
+### PS:
+this is not the final version.  
+i'll add some more abstraction to notp so it will be easyer to use.
