@@ -12,7 +12,7 @@
 - clean generation of base64 encoded qr png's
 - foolproof key generation
 
-### haw to use:
+### how to use:
 
 installation:  
 `npm install gzotp`

@@ -1,10 +1,6 @@
 var base32 = require("thirty-two");
 var notp = require("notp");
 
-/*for (var i = 0; i < 21; i++) {
-	console.log(notp.hotp.gen(key, {counter: i}));
-}*/
-
 var QREncoder = require("qr").Encoder;
 
 var charset = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz!@#$%^&*()<>?/[]{},.:;";
