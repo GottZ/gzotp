@@ -1,0 +1,10 @@
+0.0.3
+  added history.txt
+  added upload.sh
+
+0.0.2
+	typo in readme
+	removal of a comment in app.js
+
+0.0.1
+	initial commit
