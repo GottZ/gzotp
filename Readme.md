@@ -9,25 +9,25 @@
 
 ### goals:
 
-- clean generation of base64 encoded qr png's
+- clean generation of base64 encoded qr png uri's
 - foolproof key generation
 - increased usability
 
 ### how i do versioning:
+
 `x.y.z`
 
 - `x` means: it will break
-- `y` means: it will not break but it will contain more features
+- `y` means: it will most likely break but it will contain more features
 - `z` means: it will just contain bug fixes / changes that won't effect your stuff
 
-overall this means.. you can just add package.json dependency's to x and everything should be fine.
+overall this means.. you can just add package.json dependency's to y and everything should be fine.
 
-### how to use:
+### installation:  
 
-installation:  
 `npm install gzotp`
 
-usage:  
+### usage:  
 
     var otp = require("gzotp");
     // generate key:
@@ -37,17 +37,19 @@ usage:
     // generate qr code:
     var qr = otp.qr(uri, cb);
     // where cb is like:
-    var cb = function (uri) {
-       console.log(uri); 
+    var cb = function (data) {
+       // data.uri contains a string like: data:image/png;base64,awdawdas....awdawd==
+       // data.raw contains raw png data
     }
     
 ### for usage there are:
+
 `otp.hotp` for counter based tokens  
 `otp.totp` for time based tokens
 
 ### for documentation about them take a look at:
-https://github.com/guyht/notp
 
+https://github.com/guyht/notp
 
 ### PS:
 this is not the final version.  

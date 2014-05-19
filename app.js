@@ -25,7 +25,10 @@ module.exports = {
 	qr: function (uri, cb) {
 		var enc = new QREncoder;
 		enc.on("end", function (png) {
-			cb("data:image/png;base64," + png.toString("base64"));
+			cb({
+				uri: "data:image/png;base64," + png.toString("base64"),
+				raw: png}
+			);
 		});
 		enc.encode(uri);
 	}

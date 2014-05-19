@@ -1,3 +1,6 @@
+0.1.0
+	added raw png buffer to qr callback
+
 0.0.3
   added history.txt
   added upload.sh
